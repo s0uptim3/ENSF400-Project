@@ -9,6 +9,14 @@ Run container:
 
 
 
+Updating dockerhub repo:
+
+docker tag ensf400project:v2.0 rodolfogp/ensf400project:v2.0
+
+docker login
+
+docker push rodolfogp/ensf400project:v2.0
+
 
 
 
