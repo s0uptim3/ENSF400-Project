@@ -37,4 +37,4 @@ docker run --detach --publish 8080:8080 --volume jenkins_home:/var/jenkins_home 
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
 
-hi
+hi hi
