@@ -28,3 +28,13 @@ docker push rodolfogp/ensf400project:v2.0
 Command to run docker compose:
 
 docker-compose up -d
+
+
+jenkins Commands locally:
+
+docker pull jenkins/jenkins:lts
+docker run --detach --publish 8080:8080 --volume jenkins_home:/var/jenkins_home --name Jenkins jenkins/jenkins:lts
+docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+
+
+hi hi
