@@ -92,10 +92,11 @@ pipeline {
           // Override JAVA_HOME to use JDK 11 for this stage
           JAVA_HOME = '/usr/lib/jvm/java-11-openjdk'
           PATH = "${JAVA_HOME}/bin:${PATH}"
+          SONAR_TOKEN = credentials('SONAR_TOKEN')
         }      
       
       steps{
-        sh './gradlew sonarqube -Dsonar.host.url=http://sonarqube:9000 -Dsonar.login="admin" -Dsonar.password="ensf400"'
+        sh './gradlew sonarqube -Dsonar.host.url=http://sonarqube:9000 -Dsonar.login="admin" -Dsonar.password="gronk1"'
       }
     }
   }
