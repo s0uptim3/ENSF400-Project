@@ -69,7 +69,7 @@ pipeline {
     stage('Static Analysis') {   
       
       steps{
-        sh './gradlew sonarqube -Dsonar.host.url=http://sonarqube:9000 -Dsonar.login="admin" -Dsonar.password="admin" --stacktrace'
+        sh './gradlew sonarqube -Dsonar.host.url=http://sonarqube:9000 -Dsonar.login="admin" -Dsonar.password="ensf400" --stacktrace'
       }
     }
   }
